@@ -26,7 +26,7 @@ def load_and_print_info(data_module_class) -> None:
     print(dataset)
 
 
-BATCH_SIZE = 32
+BATCH_SIZE = 16
 DEFAULT_DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 NUM_AVAIL_CPUS = multiprocessing.cpu_count()
 NUM_AVAIL_GPUS = torch.cuda.device_count()
